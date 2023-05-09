@@ -8,6 +8,28 @@
 	"item": [
 		{
 			"name": "create",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "58f4d0a7-0da5-4d6c-9685-3ccee67fabf7",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});",
+							"pm.test(\"Response time is less than 200ms\", function () {",
+							"    pm.expect(pm.response.responseTime).to.be.below(2400);",
+							"});",
+							"pm.test(\"Response is expected message\", function () {",
+							"    const response = pm.response.json();",
+							"    console.info(\"...response:\", response)",
+							"    // pm.expect(response.user.cognitoID).to.eql(pm.variables.get(\"Username\"));",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
 			"id": "f747afed-4f87-4298-9a2a-af3710a30187",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
