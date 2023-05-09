@@ -1,0 +1,38 @@
+{
+	"info": {
+		"_postman_id": "0d4385ee-9edb-4f7c-88b4-1d81cef9d986",
+		"name": "New Collection - Public Repo",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_uid": "13247867-0d4385ee-9edb-4f7c-88b4-1d81cef9d986"
+	},
+	"item": [
+		{
+			"name": "create",
+			"id": "f747afed-4f87-4298-9a2a-af3710a30187",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://jujs6tkrhc.execute-api.us-east-1.amazonaws.com/dev/users/create",
+					"protocol": "https",
+					"host": [
+						"jujs6tkrhc",
+						"execute-api",
+						"us-east-1",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"dev",
+						"users",
+						"create"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
