@@ -1,0 +1,37 @@
+{
+  "swagger" : "2.0",
+  "info" : {
+    "version" : "2023-05-07T16:32:33Z",
+    "title" : "dev-myservice"
+  },
+  "host" : "jujs6tkrhc.execute-api.us-east-1.amazonaws.com",
+  "basePath" : "/dev",
+  "schemes" : [ "https" ],
+  "paths" : {
+    "/users/create" : {
+      "get" : {
+        "responses" : { }
+      },
+      "options" : {
+        "consumes" : [ "application/json" ],
+        "produces" : [ "application/json" ],
+        "responses" : {
+          "200" : {
+            "description" : "200 response",
+            "headers" : {
+              "Access-Control-Allow-Origin" : {
+                "type" : "string"
+              },
+              "Access-Control-Allow-Methods" : {
+                "type" : "string"
+              },
+              "Access-Control-Allow-Headers" : {
+                "type" : "string"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
