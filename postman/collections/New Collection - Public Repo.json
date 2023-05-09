@@ -1,110 +1,160 @@
 {
-	"info": {
-		"_postman_id": "0d4385ee-9edb-4f7c-88b4-1d81cef9d986",
-		"name": "New Collection - Public Repo",
-		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
-		"_uid": "13247867-0d4385ee-9edb-4f7c-88b4-1d81cef9d986"
-	},
-	"item": [
-		{
-			"name": "create",
-			"event": [
-				{
-					"listen": "test",
-					"script": {
-						"id": "58f4d0a7-0da5-4d6c-9685-3ccee67fabf7",
-						"exec": [
-							"pm.test(\"Status code is 200\", function () {",
-							"    pm.response.to.have.status(200);",
-							"});",
-							"pm.test(\"Response time is less than 200ms\", function () {",
-							"    pm.expect(pm.response.responseTime).to.be.below(2400);",
-							"});",
-							"pm.test(\"Response is expected message\", function () {",
-							"    const response = pm.response.json();",
-							"    console.info(\"...response:\", response)",
-							"    // pm.expect(response.user.cognitoID).to.eql(pm.variables.get(\"Username\"));",
-							"});"
-						],
-						"type": "text/javascript"
-					}
-				}
-			],
-			"id": "f747afed-4f87-4298-9a2a-af3710a30187",
-			"protocolProfileBehavior": {
-				"disableBodyPruning": true
-			},
-			"request": {
-				"method": "GET",
-				"header": [],
-				"url": {
-					"raw": "https://jujs6tkrhc.execute-api.us-east-1.amazonaws.com/dev/users/create",
-					"protocol": "https",
-					"host": [
-						"jujs6tkrhc",
-						"execute-api",
-						"us-east-1",
-						"amazonaws",
-						"com"
-					],
-					"path": [
-						"dev",
-						"users",
-						"create"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "create Copy",
-			"event": [
-				{
-					"listen": "test",
-					"script": {
-						"id": "58f4d0a7-0da5-4d6c-9685-3ccee67fabf7",
-						"exec": [
-							"pm.test(\"Status code is 200\", function () {",
-							"    pm.response.to.have.status(200);",
-							"});",
-							"pm.test(\"Response time is less than 200ms\", function () {",
-							"    pm.expect(pm.response.responseTime).to.be.below(2400);",
-							"});",
-							"pm.test(\"Response is expected message\", function () {",
-							"    const response = pm.response.json();",
-							"    console.info(\"...response:\", response)",
-							"    // pm.expect(response.user.cognitoID).to.eql(pm.variables.get(\"Username\"));",
-							"});"
-						],
-						"type": "text/javascript"
-					}
-				}
-			],
-			"id": "f421d1e1-199c-4f49-ab62-1406b5c80009",
-			"protocolProfileBehavior": {
-				"disableBodyPruning": true
-			},
-			"request": {
-				"method": "GET",
-				"header": [],
-				"url": {
-					"raw": "https://jujs6tkrhc.execute-api.us-east-1.amazonaws.com/dev/users/create-copy",
-					"protocol": "https",
-					"host": [
-						"jujs6tkrhc",
-						"execute-api",
-						"us-east-1",
-						"amazonaws",
-						"com"
-					],
-					"path": [
-						"dev",
-						"users",
-						"create-copy"
-					]
-				}
-			},
-			"response": []
-		}
-	]
+  "info": {
+    "_postman_id": "0d4385ee-9edb-4f7c-88b4-1d81cef9d986",
+    "name": "New Collection - Public Repo",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_uid": "13247867-0d4385ee-9edb-4f7c-88b4-1d81cef9d986"
+  },
+  "item": [
+    {
+      "name": "create",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "id": "58f4d0a7-0da5-4d6c-9685-3ccee67fabf7",
+            "exec": [
+              "pm.test(\"Status code is 200\", function () {",
+              "    pm.response.to.have.status(200);",
+              "});",
+              "pm.test(\"Response time is less than 200ms\", function () {",
+              "    pm.expect(pm.response.responseTime).to.be.below(2400);",
+              "});",
+              "pm.test(\"Response is expected message\", function () {",
+              "    const response = pm.response.json();",
+              "    console.info(\"...response:\", response)",
+              "    // pm.expect(response.user.cognitoID).to.eql(pm.variables.get(\"Username\"));",
+              "});"
+            ],
+            "type": "text/javascript"
+          }
+        }
+      ],
+      "id": "f747afed-4f87-4298-9a2a-af3710a30187",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "https://jujs6tkrhc.execute-api.us-east-1.amazonaws.com/dev/users/create",
+          "protocol": "https",
+          "host": [
+            "jujs6tkrhc",
+            "execute-api",
+            "us-east-1",
+            "amazonaws",
+            "com"
+          ],
+          "path": [
+            "dev",
+            "users",
+            "create"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "create Copy 2",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "id": "58f4d0a7-0da5-4d6c-9685-3ccee67fabf7",
+            "exec": [
+              "pm.test(\"Status code is 200\", function () {",
+              "    pm.response.to.have.status(200);",
+              "});",
+              "pm.test(\"Response time is less than 200ms\", function () {",
+              "    pm.expect(pm.response.responseTime).to.be.below(2400);",
+              "});",
+              "pm.test(\"Response is expected message\", function () {",
+              "    const response = pm.response.json();",
+              "    console.info(\"...response:\", response)",
+              "    // pm.expect(response.user.cognitoID).to.eql(pm.variables.get(\"Username\"));",
+              "});"
+            ],
+            "type": "text/javascript"
+          }
+        }
+      ],
+      "id": "f421d1e1-199c-4f49-ab62-1406b5c80009",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "https://jujs6tkrhc.execute-api.us-east-1.amazonaws.com/dev/users/create-copy",
+          "protocol": "https",
+          "host": [
+            "jujs6tkrhc",
+            "execute-api",
+            "us-east-1",
+            "amazonaws",
+            "com"
+          ],
+          "path": [
+            "dev",
+            "users",
+            "create-copy-2"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "create Copy",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "id": "58f4d0a7-0da5-4d6c-9685-3ccee67fabf7",
+            "exec": [
+              "pm.test(\"Status code is 200\", function () {",
+              "    pm.response.to.have.status(200);",
+              "});",
+              "pm.test(\"Response time is less than 200ms\", function () {",
+              "    pm.expect(pm.response.responseTime).to.be.below(2400);",
+              "});",
+              "pm.test(\"Response is expected message\", function () {",
+              "    const response = pm.response.json();",
+              "    console.info(\"...response:\", response)",
+              "    // pm.expect(response.user.cognitoID).to.eql(pm.variables.get(\"Username\"));",
+              "});"
+            ],
+            "type": "text/javascript"
+          }
+        }
+      ],
+      "id": "f421d1e1-199c-4f49-ab62-1406b5c80009",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "https://jujs6tkrhc.execute-api.us-east-1.amazonaws.com/dev/users/create-copy",
+          "protocol": "https",
+          "host": [
+            "jujs6tkrhc",
+            "execute-api",
+            "us-east-1",
+            "amazonaws",
+            "com"
+          ],
+          "path": [
+            "dev",
+            "users",
+            "create-copy"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
 }
